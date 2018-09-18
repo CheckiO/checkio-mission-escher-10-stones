@@ -1,0 +1,40 @@
+
+<body data-author="likewind">
+<div class="question-answer">
+    <div class="question">
+        How I should start to solve this mission?
+    </div>
+    <div class="answer">
+        You could read about the game <a href='https://en.wikipedia.org/wiki/Nim'>Nim</a>. The idea of this game was the base for this mission.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        I've got the idea. What's next?
+    </div>
+    <div class="answer">
+Now you could create a list 'results' with the amount of elements equivalent to the maximum number of stones in the pile + 1. Each element, except first, should be 'False' and the first should be 'True'. This list will show which amount of the stones in the starting pile is 'win' situation for the first player and which are the 'lose' situation.<br>
+After that you will start to analyze every possible amount of stones in the starting pile (0, 1, 2 etc.), and analyze every possible move for the first player.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        How I should make an analysis?
+    </div>
+    <div class="answer">
+You should set every element of the list 'results' to 'True' if all previous elements with the index [(current element index) - (amount of stones which could be taken)] are also 'True'. In other words, you will analyze the situation retrospectively: at the beginning - a small pile and then - all situations which could lead to it. After that you will choose the 'win' and 'lose' situations for the first player.
+    </div>
+</div>
+
+<div class="question-answer">
+    <div class="question">
+        How can I find out who is the winner?
+    </div>
+    <div class="answer">
+After all analysis, you will get the list consists of true/false values. The final answer will be the element of this list with index 'n', where 'n' - is an amount of stones in the starting pile. If it's 'True' - the first player wins. If not - the second one will be the winner.
+    </div>
+</div>
+
+</body>
