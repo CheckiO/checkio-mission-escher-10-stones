@@ -1,6 +1,6 @@
 <!-- Describe task in general -->
 
-<img class="for_info_only half" src="{{MEDIA}}stones.png" style="float:left;max-height: 400px">
+<img class="for_info_only half" src="{{MEDIA}}stones.jpg" style="float:left;max-height: 400px">
 
 <div class="story for_info_only">
 Your backpack with all of the equipment and treasures got real heavy, but you welcomed this burden - with this money you'll be able to compensate for the broken ships and celebrate the successfulness of the expedition. Of course, for this you first need to get home, but your gut has been telling you that you are gonna make it.<br>
@@ -13,8 +13,14 @@ Approaching them, you've heard a voice coming out of nowhere: "... finish ... th
 </div>
 
 <p>
-You most likely know the game where two players are in turn taking from a pile from 1 to 3 stones, and loses the one who took the last stone. We'll slightly generalize this task. Let's assume that both players can take not 1, 2, 3 stones, but k1, k2, …, km of stones. Here we are interested which player wins under the right circumstances (the game played properly).
+You most likely know the game where two players are in turn taking from a pile from 1 to 3 stones, and loses the one who took the last stone. We'll slightly generalize this task. Let's assume that both players can take not 1, 2, 3 stones, but k1, k2, …, km of stones. Here we are interested which player wins under the right circumstances (the game played properly).<br>
+As the input you will get the number of stones in the pile at the beginning of the game and an amounts of stones you can take from pile at each move. For example - (10, [1, 2, 3]).<br>
+If the current amount of the stones in the pile is lower than lowest number in the "moves" list - current player takes them all and lose.
 </p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}10_game.jpg" style="max-height: 550px">
+</div>
 
 <!-- Explain input and output values -->
 <p>
@@ -22,7 +28,7 @@ You most likely know the game where two players are in turn taking from a pile f
 </p>
 
 <p>
-    <strong>Output: </strong> Winner's number.
+    <strong>Output: </strong> Winner's number (1 or 2)
 </p>
 
 
